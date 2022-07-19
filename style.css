@@ -33,12 +33,15 @@ h1{
     margin: 0 30px;
     border-radius: 50%;
     position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
 }
 .social-links a .fa-brands{
 font-size: 30px;
 line-height: 80px;
 position: relative;
 z-index: 10;
+transition: color 0.5s;
 }
 .social-links a::after{
     content: '' ;
@@ -52,5 +55,10 @@ z-index: 10;
 }
 .social-links a:hover::after{
     top: 0;
-
+}
+.social-links a:hover .fa-brands{
+    color: white;
+}
+.social-links a:hover{
+    transform: translateY(-10px);
 }
