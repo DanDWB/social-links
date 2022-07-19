@@ -33,6 +33,7 @@ h1{
     margin: 0 30px;
     border-radius: 50%;
 }
-.fab{
-    
+.social-links a .fa-brands{
+font-size: 30px;
+line-height: 80px;
 }
