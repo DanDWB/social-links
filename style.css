@@ -37,6 +37,8 @@ h1{
 .social-links a .fa-brands{
 font-size: 30px;
 line-height: 80px;
+position: relative;
+z-index: 10;
 }
 .social-links a::after{
     content: '' ;
@@ -46,4 +48,9 @@ line-height: 80px;
     left: 0;
     background: linear-gradient(-45deg, #ed1c94, #ffec17);
     position: absolute;
+    transition: 0.5s;
+}
+.social-links a:hover::after{
+    top: 0;
+
 }
